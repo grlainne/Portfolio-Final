@@ -26,7 +26,6 @@ nav li a {
 
 nav li a:hover {
     background-color: #b5af9e;
-
 }
 
 .Logo {
@@ -37,7 +36,7 @@ nav li a:hover {
 }
 
 .LogoBar {
-    background-color: #e3e3e3;
+    background-color:#e3e3e3;
 }
 
 /*Hero Container*/
@@ -54,19 +53,29 @@ nav li a:hover {
 }
 
 .Hello {
+    color: #525266;
     float: left;
     position: relative;
+    animation: fadeInUp 2s;
+}
+
+.Hello p {
+    font-size: 40px;
+    padding-bottom: 2rem;
+}
+
+.Name {
+    padding-bottom: 50px;
 }
 
 .hero_container h1 {
     font-size: 5vw;
     color: #525266;
-    animation: fadeInUp 2s;
 }
 
 @keyframes fadeInUp {
     0% {
-        transform: translateY(100%);
+        transform: translateY(30%);
         opacity: 0;
       }
     100% {
@@ -84,12 +93,52 @@ nav li a:hover {
 
 .content_container {
     display: flex;
-    padding: 50px;
+    width: 80vw;
+    min-height: 76vh;
+    align-items: center;
+    margin: auto;
+}
+
+.About_Text {
+    color: #525266;
+    padding: 0 100px 0 100px;
+    word-wrap: break-word;
+    animation: fadeInUp 2s;
+}
+
+.About_Text p {
+    padding-bottom: 2rem;
+
+}
+
+.About_Text h1 {
+    font-size: 50px;
+    padding-bottom: 2rem;
+}
+
+.button {
+    background-color: #b5af9e;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #3f0909;
+    transition: 0.5s;
 }
 
 .selfie {
     display: flex;
+    border: 5px solid #525266;
+    border-radius: 25px;
     width: 30%;
+    animation: fadeInUp 2s;
 }
 
 /*Accordion Container*/
@@ -97,7 +146,7 @@ nav li a:hover {
     display: flex;
     align-items: center;
     margin: 4rem auto 4rem auto;
-    width: 80%;
+    width: 90%;
     flex-direction: column;
     min-height: 20vh;
   }
@@ -138,7 +187,7 @@ nav li a:hover {
     background-color: #c95a0f;
 }
   
-  .panel {
+.panel {
     padding: 0 18px;
     background-color: #b8c4a6;
     max-height: 0;

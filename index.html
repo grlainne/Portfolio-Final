@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+
+    <script src="java.js" defer></script>
     <title>GS Portfolio</title>
 </head>
 
@@ -36,15 +38,10 @@
     <section class="hero_container">
       <div class="Hello">
       <h1>Hi there!</h1>
-      <h1>My name is Gail.</h1>
+      <h1 class="Name">My name is Gail.</h1>
+      <p>I am a Graphic Design Student attending SAIT.</p>
+      <a href="./About Me.html" class="button">Learn More About Me!</a>
     </div>
-    </section>
-
-    <!--CONTENT SECTION-->
-    <section class="content_container">
-      <img class="selfie" src="./assets/IMG_0807_Original.jpg">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat, sem a luctus tincidunt, dolor libero viverra sapien, eget ornare neque metus eget nibh. Praesent pulvinar, sem et sollicitudin rhoncus, odio lectus fringilla orci, quis finibus libero dolor quis libero. Aliquam sollicitudin leo nec ex euismod scelerisque. Morbi sodales consequat elit quis gravida. Phasellus quis tristique elit. Proin accumsan ultricies lobortis. Mauris ut gravida ante, at vulputate ipsum. Etiam sed vehicula est, vitae dapibus metus. Proin tincidunt vitae est nec vestibulum. Vivamus vehicula metus ac neque commodo tincidunt. Maecenas non arcu eu augue interdum lacinia.</p>
-
     </section>
 
     <!--CARD SECTION-->
@@ -52,58 +49,14 @@
         
     </section>
 
-    <!--ACCORDION SECTION-->
-    <section class="accordion_container">
-        <h2>FAQ</h2>
-        <button class="accordion">What inspired you to start taking photos?</button>
-        <div class="panel">
-          <p>I became interested in taking photos after discovering my familys old photo album. It made me a little emotional looking at photos
-            when I was younger, so I thought it would be nice to start making a photo album for myself to look back on in the future.
-          </p>
-        </div>
-        <button class="accordion">Do you have any upcoming projects or goals for your photography?</button>
-        <div class="panel">
-          <p>Personally, I don't take on photography projects and like to take photos casually. I will generally only bring my small cameras if
-            I plan to leave the city for a trip. I do want to take more photos this year and hopefully fill up the photo album before 2025.
-          </p>
-        </div>
-
-        <!--JS for the Accordion (the js file wasn't linking again, sorry)-->
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-            
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                  panel.style.maxHeight = null;
-                } else {
-                  panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-              });
-            }
-            </script>
-            </section>
-
-    <!--EMBED VIDEO-->
-    <section class="video_container">
-        <video class="video" autoplay muted loop>
-            <source src="assets/cameravideo.mp4" type="video/mp4">
-        </video>
-    </section>
 
     <!--FOOTER SECTION-->
     <footer class="footer-container">
         <div class="footer-links">
-            <!--Used a free Instagram icon to link my Photography account on IG-->
-            
+
         </div>
         </footer>
           <div class="cc">
             <span id="year"></span>
-            <script>let currentYear = new Date().getFullYear();
-              document.getElementById("year").innerText = `© ${currentYear} Gail Salinas`;</script>
         </div>
 </body>
