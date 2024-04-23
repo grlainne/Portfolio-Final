@@ -1,0 +1,147 @@
+body {
+    background-color: #e3e3e3;
+}
+
+::selection {
+    background-color: #3f0909;
+    color: white;
+}
+
+/*Nav Bar*/
+.Nav_Bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #525266;
+    list-style-type: none;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+nav li a:hover {
+    background-color: #b5af9e;
+
+}
+
+.Logo {
+    display: block;
+    margin: auto;
+    width: 150px;
+    padding: 20px;
+}
+
+.LogoBar {
+    background-color: #e3e3e3;
+}
+
+/*Hero Container*/
+.hero_container {
+    display: flex;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 76vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Hello {
+    float: left;
+    position: relative;
+}
+
+.hero_container h1 {
+    font-size: 5vw;
+    color: #525266;
+    animation: fadeInUp 2s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*Content*/
+
+.content_container {
+    display: flex;
+    padding: 50px;
+}
+
+.selfie {
+    display: flex;
+    width: 30%;
+}
+
+/*Accordion Container*/
+.accordion_container {
+    display: flex;
+    align-items: center;
+    margin: 4rem auto 4rem auto;
+    width: 80%;
+    flex-direction: column;
+    min-height: 20vh;
+  }
+
+.accordion_container h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: 3vh;
+}
+
+.accordion_container p {
+    padding: 1rem;
+}
+  
+.accordion {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    color: #222a2a;
+    font-size: 1rem;
+    background-color: #7a9375;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+  
+.accordion:active {
+    background-color: #b8c4a6;
+}
+  
+.accordion:hover {
+    background-color: #c95a0f;
+}
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #b8c4a6;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.2s ease-out;
+  }
