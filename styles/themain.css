@@ -139,7 +139,7 @@ nav li a:hover {
     display: flex;
     border: 5px solid #525266;
     border-radius: 0.5rem;
-    width: 30%;
+    width: 40%;
     animation: fadeInUp 2s;
 }
 
