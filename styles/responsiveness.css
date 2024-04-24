@@ -19,6 +19,14 @@
     .selfie {
         width: 90%;
     }
+
+    .About_Text h1 {
+        margin-top: 50px;
+    }
+
+    .meow {
+        width: 90%;
+    }
 }
 
 /*Responsiveness for Tablet*/
@@ -29,6 +37,14 @@
     }
 
     .selfie {
+        width: 70%;
+    }
+
+    .About_Text h1 {
+        margin-top: 50px;
+    }
+
+    .meow {
         width: 70%;
     }
 }
