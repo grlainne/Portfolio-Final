@@ -27,6 +27,10 @@
     .meow {
         width: 90%;
     }
+
+    .accordion_container {
+        width: 90%;
+    }
 }
 
 /*Responsiveness for Tablet*/
@@ -46,5 +50,9 @@
 
     .meow {
         width: 70%;
+    }
+
+    .accordion_container {
+        width: 90%;
     }
 }
