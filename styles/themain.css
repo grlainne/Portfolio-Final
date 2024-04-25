@@ -89,6 +89,17 @@ nav li a:hover {
     100% {opacity: 1;}
 }
 
+/*For the two Images under the hero banner*/
+.imagecontainer {
+    display: flex;
+    padding: 1rem 0 1rem 0;
+    background-color: #b5af9e;
+}
+
+.imagecontainer img {
+    width: 50%;
+}
+
 /*Content*/
 
 .content_container {
@@ -231,7 +242,7 @@ nav li a:hover {
     font-size: clamp(1rem, 10vw, 5rem); 
 }
 
-img {
+.projectimg {
     border-radius: 0.25rem;
     height: auto;
     width: 100%;
